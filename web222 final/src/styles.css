@@ -1,0 +1,390 @@
+/*Name: Aparajeeta Diwya
+Class: WEB22 NAA
+Student ID: 130958218
+FINAL WEB ASSIGNMENT
+Date: 7/12/2022*/
+
+
+/*CSS for the entire webpage that overrides the margin and padding*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    
+}
+
+html, body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+/*CSS for the Image*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*CSS for the heading and navigation menu*/
+.heading {
+    padding-top: 50px;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #cd9575;
+    position: fixed;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    z-index: 400;
+    right: 0;
+}
+
+.navItem {
+    list-style: none;
+    display: inline-block;
+    padding: 15px 45px 15px 0;
+    position: relative;
+    font-family: 'Zen Antique Soft', serif;
+}
+
+.navLink {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+/*CSS for the buttons and the input*/
+button, input {
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #841a1a;
+    border: 1px solid #841a1a;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 10px 90px 10px;
+}
+
+.button:hover {
+    border: 1px solid #841a1a;
+    background: #841a1a;
+    transition: 0.5s;
+    color: white;
+}
+
+/*CSS for the home page information*/
+.home {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    background-color: #f5f5dc;
+    height: 100%;
+    width: 100%;
+
+}
+
+.homeInfo {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1024px;
+    margin: auto;
+}
+
+/*CSS for my picture*/
+.myImg {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    width: 350px;
+    height: 350px;
+}
+
+/*CSS for the home page content*/
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.homeContent h2 {
+    font-size: 75px;
+     color: #841a1a;
+}
+
+.homeContent p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #841a1a;
+    max-width: 800px;
+}
+
+/*CSS for the download button icon*/
+.fa-sharp {
+   padding-right: 14px;
+}
+
+
+/*CSS for the about page information*/
+.about {
+    background-color: #efdfbb;
+    padding: 30px;
+}
+
+.aboutInfo {
+    max-width: 1024px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.aboutList {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+    
+}
+
+.aboutContent {
+    font-size: 20px;
+    line-height: 40px;
+    
+}
+
+pre, span {
+    color: #841a1a;
+}
+
+.aboutWrite p {
+    font-size: 19px;
+
+    text-align: justify;
+    margin-bottom: 30px;
+    color: #841a1a;
+}
+
+.aboutInfo {
+    padding-bottom: 60px;
+    
+}
+
+/*CSS for the skills page information*/
+.skill-content {
+   
+    text-align: center;
+    padding-bottom: 60px;
+}
+.skills {
+    background-color: #f0ead6;
+    height: 100%;
+   
+}
+
+.skills ul {
+    font-size: 20px;
+     padding-top: 20px;
+    padding-bottom: 40px;
+    color: #721818;
+    
+    
+}
+.skill-content li{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    text-decoration: none;
+    background: #edc9af;
+    margin: 25px;
+    padding: 20px 20px;
+  
+}
+.skill-content li:hover {
+
+    background: #721818;
+    transition: 0.1s;
+    color: white;
+}
+
+/*CSS for the education page information*/
+.education {
+    background-color: #edc9af;
+}
+
+.educationInfo {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+.educationArea {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+     text-align: center;
+    padding: 15px;
+    margin: 35px;
+    background: wheat;
+    border-radius: 10px;
+}
+.educationArea h1 {
+    font-size: 30px;
+    color: #a52a21;
+    padding: 10px;
+}
+.educationArea h2 {
+    font-size: 22px;
+    padding: 2px;
+}
+
+.educationArea p {
+    font-size: 20px;
+    color: #a52a21;
+    padding: 8px;
+}
+
+/*CSS for the contact page information*/
+label {
+    color: #88221b;
+    font-weight: 600;
+}
+
+.contact {
+    background-color: #ffe4cd;
+}
+
+.contactForm {
+    max-width: 450px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 25px;
+}
+
+.contactForm .format, .contactForm textarea {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 15px;
+    background: #FFF;
+    border-radius: 5px;
+}
+form .button {
+    margin-bottom: 50px;
+}
+
+/*CSS for the errors if displayed*/
+#error {
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+ 
+}
+/*CSS for the footer page information*/
+.footer {
+    background: #a52a21;
+    text-align: center;
+    padding-top: 2px;
+}
+
+/*CSS for the icons in the footer page*/
+.icons .fa-brands {
+    font-size: 27px;
+    color: wheat;
+    cursor: pointer;
+    padding: 5px;
+}
+.footer p {
+    color: white;
+    font-size: 18px;
+
+}
+
+.footer p span {
+    color: white;
+    font-size: 15px;
+}
+
+
+/*CSS for the responsive design*/
+@media (max-width: 850px) {
+.navLink{
+        margin: 0.1rem 0;
+
+}
+
+.navItem {
+    padding: 3px;
+}
+  .homeContent h2 {
+        font-size: 60px;
+    }
+
+    .homeContent p {
+        font-size: 24px;
+    }
+
+    .myImg {
+    margin-top: 10px;
+    }
+
+    .aboutInfo {
+        grid-template-columns: 1fr;
+    }
+
+
+    .heading {
+        font-size: 75px;
+    }
+}
+/*CSS for the responsive design*/
+@media (max-width: 400px) {
+.homeContent h2 {
+        font-size: 30px;
+    }
+
+.homeContent p {
+        font-size: 20px;
+    }
+
+ .heading {
+        font-size: 50px;
+    }
+ .aboutWrite p {
+        font-size: 20px;
+        padding: 2px;
+    }
+.aboutContent pre {
+        font-size: 15px;
+        padding: 2px;
+}
+}
